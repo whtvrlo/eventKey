@@ -1,0 +1,141 @@
+body {
+  background-color: grade;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-image: url(./giphyloop.gif);
+}
+
+.mainbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box1 {
+  width: 100%;
+  background-color: rgba(137, 43, 226, 0.678);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 100px;
+}
+
+.box2 {
+  width: 100%;
+  background-color: rgba(43, 226, 180, 0.603);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 100px;
+}
+
+.box3 {
+  width: 100%;
+  background-color: rgba(16, 90, 201, 0.568);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 97px;
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+}
+
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  /* background-image: linear-gradient(315deg, #792b83 1%, #13b958 74%); */
+  z-index: 200;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+}
+
+.splash.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: -10;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in forwards;
+  color: #6df7a6;
+  
+}
+
+/* .visibleStart {
+  display block;
+  z-index: -10;
+}
+
+.hidden {
+  display: none;
+  z-index:-10;
+} */
+
+/* p {
+  font-family: "Orbitron", sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-left: 26%;
+  margin-top: 26%;
+  display: none;
+
+} */
+
+.text {
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 2.9vw;
+  }
+  h2 {
+    font-size: 3vh;
+  }
+  h3 {
+    font-size: 2vmin;
+  }
+}
